@@ -127,8 +127,8 @@ function renderCalendar(){
 
     for(let day = 1; day <= daysInMonth; day++){
 
-        html += `
-        <div class="calendar-day">
+html += `
+        <div class="calendar-day" onclick="openCalendarDay(${day})">
             ${day}
         </div>
         `;
@@ -136,6 +136,22 @@ function renderCalendar(){
     }
 
     return html;
+
+}
+
+
+
+function openCalendarDay(day){
+
+    const date = new Date(
+        userData.calendarYear,
+        userData.calendarMonth,
+        day
+    );
+
+    alert(
+        "Selected: " + date.toLocaleDateString()
+    );
 
 }
 
