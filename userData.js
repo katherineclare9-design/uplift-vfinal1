@@ -38,26 +38,34 @@ previousMode:"Regular",
 
 arfidSupport:false,
 
+
+// =====================
+// XP + LEVEL SYSTEM
+// =====================
+
+xp:0,
+
+level:1,
+
+xpToNextLevel:100,
+
+
+
 // =====================
 // CALENDAR
 // =====================
-
 calendarEvents:[],
 
 calendarMonth:new Date().getMonth(),
 
 calendarYear:new Date().getFullYear(),
 
-selectedCalendarDate:""
+selectedCalendarDate:"",
 
 
-
-
-
-
-
-
+// =====================
 // DAILY STREAK
+// =====================
 
 streak:0,
 
@@ -66,10 +74,8 @@ lastStreakDate:"",
 longestStreak:0,
 
 streakHistory:[],
-lastStreakDate:"",
 
 dayCompleted:false,
-
 
 
 
