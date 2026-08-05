@@ -48,6 +48,7 @@ calendarMonth:new Date().getMonth(),
 
 calendarYear:new Date().getFullYear(),
 
+selectedCalendarDate:""
 
 
 
