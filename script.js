@@ -138,11 +138,6 @@ function renderCalendar(){
     return html;
 
 }
-    saveUserData();
-
-    showPage("calendar");
-
-}
 
 
 
