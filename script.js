@@ -103,6 +103,49 @@ function changeCalendarMonth(amount){
 
 
 
+function renderCalendar(){
+
+    const firstDay = new Date(
+        userData.calendarYear,
+        userData.calendarMonth,
+        1
+    ).getDay();
+
+    const daysInMonth = new Date(
+        userData.calendarYear,
+        userData.calendarMonth + 1,
+        0
+    ).getDate();
+
+    let html = "";
+
+    for(let i = 0; i < firstDay; i++){
+
+        html += `<div class="calendar-day empty"></div>`;
+
+    }
+
+    for(let day = 1; day <= daysInMonth; day++){
+
+        html += `
+        <div class="calendar-day">
+            ${day}
+        </div>
+        `;
+
+    }
+
+    return html;
+
+}
+    saveUserData();
+
+    showPage("calendar");
+
+}
+
+
+
 // =====================
 // PROFILE CREATION
 // =====================
@@ -2142,9 +2185,23 @@ content = `
 
 <div class="card">
 
-<p style="text-align:center;">
-🚧 Calendar coming soon...
-</p>
+<div class="calendar-header">
+
+<span>Sun</span>
+<span>Mon</span>
+<span>Tue</span>
+<span>Wed</span>
+<span>Thu</span>
+<span>Fri</span>
+<span>Sat</span>
+
+</div>
+
+<div id="calendarGrid" class="calendar-grid">
+
+${renderCalendar()}
+
+</div>
 
 </div>
 
