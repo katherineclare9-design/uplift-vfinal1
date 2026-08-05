@@ -149,9 +149,12 @@ function openCalendarDay(day){
         day
     );
 
-    alert(
-        "Selected: " + date.toLocaleDateString()
-    );
+    userData.selectedCalendarDate =
+    date.toLocaleDateString();
+
+    saveUserData();
+
+    showPage("calendar");
 
 }
 
@@ -2207,11 +2210,77 @@ content = `
 
 </div>
 
+
 <div id="calendarGrid" class="calendar-grid">
 
 ${renderCalendar()}
 
 </div>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>📅 Add Calendar Event</h2>
+
+
+${
+userData.selectedCalendarDate
+
+?
+
+`
+
+<p>
+Selected Date:
+<b>${userData.selectedCalendarDate}</b>
+</p>
+
+
+<input
+id="eventName"
+placeholder="Event name"
+/>
+
+
+<select id="eventMode">
+
+<option value="Event">
+🌊 Event Mode
+</option>
+
+<option value="Vacation">
+🤍 Vacation Mode
+</option>
+
+<option value="Regular">
+💖 Regular Mode
+</option>
+
+</select>
+
+
+<button onclick="saveCalendarEvent()">
+
+💾 Save Event
+
+</button>
+
+`
+
+:
+
+`
+
+<p>
+Click a day to add an event.
+</p>
+
+`
+
+}
 
 </div>
 
