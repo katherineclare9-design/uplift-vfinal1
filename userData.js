@@ -34,7 +34,19 @@ profileDate:"",
 
 mode:"Regular",
 
+previousMode:"Regular",
+
 arfidSupport:false,
+
+// =====================
+// CALENDAR
+// =====================
+
+calendarEvents:[],
+
+calendarMonth:new Date().getMonth(),
+
+calendarYear:new Date().getFullYear(),
 
 
 
