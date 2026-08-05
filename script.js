@@ -551,18 +551,17 @@ function addNutritionFood(){
 
 
 
-    addDiaryEntry(
+addDiaryEntry(
 
-        "nutrition",
+    "nutrition",
 
-        food,
+    food,
 
-        `${meal} • ${calories} calories`,
+    `${meal} • ${calories} calories`,
 
-        10
+    10
 
-    );
-
+);
 
 
 
