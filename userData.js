@@ -55,16 +55,6 @@ selectedCalendarDate:""
 
 
 
-// =====================
-// XP + LEVEL SYSTEM
-// =====================
-
-
-xp:0,
-
-level:1,
-
-xpToNextLevel:100,
 
 
 // DAILY STREAK
