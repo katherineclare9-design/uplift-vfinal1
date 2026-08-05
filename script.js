@@ -74,6 +74,36 @@ function applyTheme(){
 
 
 // =====================
+// CALENDAR SYSTEM
+// =====================
+
+function changeCalendarMonth(amount){
+
+    userData.calendarMonth += amount;
+
+    if(userData.calendarMonth > 11){
+
+        userData.calendarMonth = 0;
+        userData.calendarYear++;
+
+    }
+
+    if(userData.calendarMonth < 0){
+
+        userData.calendarMonth = 11;
+        userData.calendarYear--;
+
+    }
+
+    saveUserData();
+
+    showPage("calendar");
+
+}
+
+
+
+// =====================
 // PROFILE CREATION
 // =====================
 
@@ -2085,16 +2115,48 @@ Reset Progress
 
 
 
+// =====================
+// CALENDAR PAGE
+// =====================
 
+if(page === "calendar"){
 
+const monthNames = [
+"January","February","March","April","May","June",
+"July","August","September","October","November","December"
+];
 
+content = `
+
+<h1>📅 Calendar</h1>
+
+<div class="card">
+
+<button onclick="changeCalendarMonth(-1)">⬅️</button>
+
+<h2>${monthNames[userData.calendarMonth]} ${userData.calendarYear}</h2>
+
+<button onclick="changeCalendarMonth(1)">➡️</button>
+
+</div>
+
+<div class="card">
+
+<p style="text-align:center;">
+🚧 Calendar coming soon...
+</p>
+
+</div>
+
+`;
+
+}
 
 
 
 // =====================
 // BOTTOM NAV
 // =====================
-
 
 app.innerHTML = content + `
 
@@ -2149,12 +2211,20 @@ app.innerHTML = content + `
 
 
 
+<button onclick="showPage('calendar')">
+
+📅
+
+</button>
+
+
+
+
 <button onclick="showPage('profile')">
 
 👤
 
 </button>
-
 
 
 
