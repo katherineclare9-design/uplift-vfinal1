@@ -1,6 +1,8 @@
 // UpLift Daily Workout Schedule
 
+
 const dailyWorkouts = {
+
 
     Sunday: {
         morning: [
@@ -9,12 +11,15 @@ const dailyWorkouts = {
             "Jumps and flexibility",
             "Grow with Jo 20-Min Low-Impact Cardio"
         ],
+
         nighttime: [
             "Lilly Sabri 6-Min Glutes",
             "Full Backspot Strength workout",
             "Hourglass Finisher - Shoulders & Upper Back"
         ]
+
     },
+
 
     Monday: {
         morning: [
@@ -23,26 +28,31 @@ const dailyWorkouts = {
             "Jumps and flexibility",
             "Grow with Jo 20-Min Low-Impact Cardio"
         ],
+
         nighttime: [
             "Lilly Sabri 6-Min Glutes",
             "Lower body workout",
             "Upper body workout",
             "Hourglass Finisher - Glutes"
         ]
+
     },
+
 
     Tuesday: {
         morning: [
             "Lilly Sabri 15-Min Hourglass Pilates Sculpt",
-            "Deep core activation",
-            "Jumps and flexibility"
+            "Deep core activation"
         ],
+
         nighttime: [
             "Lilly Sabri 6-Min Glutes",
             "Full Backspot Strength workout",
             "Hourglass Finisher - Shoulders & Upper Back"
         ]
+
     },
+
 
     Wednesday: {
         morning: [
@@ -51,13 +61,16 @@ const dailyWorkouts = {
             "Jumps and flexibility",
             "Grow with Jo 20-Min Low-Impact Cardio"
         ],
+
         nighttime: [
             "Lilly Sabri 6-Min Glutes",
             "Lower body workout",
             "Upper body workout",
             "Hourglass Finisher - Glutes"
         ]
+
     },
+
 
     Thursday: {
         morning: [
@@ -65,39 +78,49 @@ const dailyWorkouts = {
             "Deep core activation",
             "Jumps and flexibility"
         ],
+
         nighttime: [
             "Lilly Sabri 6-Min Glutes",
             "Full Backspot Strength workout",
             "Hourglass Finisher - Shoulders & Upper Back"
         ]
+
     },
+
 
     Friday: {
         morning: [
             "Lilly Sabri 15-Min Hourglass Pilates Sculpt",
             "Deep core activation",
-            "Jumps and flexibility",
             "Grow with Jo 20-Min Low-Impact Cardio"
         ],
+
         nighttime: [
             "Lilly Sabri 6-Min Glutes",
             "Upper body workout",
             "Full Backspot Strength workout",
             "Hourglass Finisher - Glutes"
         ]
+
     },
+
 
     Saturday: {
         morning: [
             "Lilly Sabri 15-Min Hourglass Pilates Sculpt",
             "Deep core activation",
-            "Jumps and flexibility"
+            "Jumps and flexibility",
+            "Grow with Jo 20-Min Low-Impact Cardio"
         ],
+
         nighttime: [
             "Lilly Sabri 6-Min Glutes",
-            "Full Backspot Strength workout"
+            "Full Backspot Strength workout",
+            "Lower body workout"
         ]
+
     }
+
 
 };
 
