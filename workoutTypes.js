@@ -9,7 +9,7 @@ const workoutTypes = {
         xp: 50
     },
 
-    "Deep core activation": {
+    "Deep Core Activation": {
         category: "core",
         xp: 50
     },
@@ -18,7 +18,7 @@ const workoutTypes = {
     // CARDIO
     // =====================
 
-    "Grow with Jo 20-Min Low-Impact Cardio": {
+    "Grow with Jo — 10-Min Low-Impact Cardio": {
         category: "cardio",
         xp: 40
     },
@@ -27,7 +27,7 @@ const workoutTypes = {
     // FLEXIBILITY
     // =====================
 
-    "Jumps and flexibility": {
+    "Cheer Jump & Flexibility": {
         category: "flexibility",
         xp: 75
     },
@@ -41,12 +41,12 @@ const workoutTypes = {
         xp: 50
     },
 
-    "Lower body workout": {
+    "Lower Body Workout": {
         category: "lowerBody",
         xp: 100
     },
 
-    "Hourglass Finisher - Glutes": {
+    "Hourglass Finisher — Glutes": {
         category: "lowerBody",
         xp: 25
     },
@@ -55,12 +55,12 @@ const workoutTypes = {
     // UPPER BODY
     // =====================
 
-    "Upper body workout": {
+    "Upper Body Workout": {
         category: "upperBody",
         xp: 100
     },
 
-    "Hourglass Finisher - Shoulders & Upper Back": {
+    "Hourglass Finisher — Shoulders & Upper Back": {
         category: "upperBody",
         xp: 25
     },
@@ -69,7 +69,7 @@ const workoutTypes = {
     // BACKSPOT
     // =====================
 
-    "Full Backspot Strength workout": {
+    "Backspot Strength": {
         category: "backspot",
         xp: 100
     },
